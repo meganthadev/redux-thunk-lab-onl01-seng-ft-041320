@@ -20,6 +20,7 @@ class App extends Component {
       <div className="App">
         <h1>CatBook</h1>
         {this.handleLoading()}
+        <CatList catPics={this.props.catPics} />
       </div>
     );
   }
@@ -40,4 +41,3 @@ const mapDispatchToProps = dispatch => {
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)
-
